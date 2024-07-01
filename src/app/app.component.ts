@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'output-app';
+  submittedData: any;
+
+  handleFormSubmit(data: any) {
+    this.submittedData = data;
+  }
 }
